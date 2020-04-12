@@ -16,15 +16,13 @@
 
 		<span class="logo-lg">
 			
-			<img src="vistas/img/plantilla/iconocydlargo.png" class="img-responsive" style="padding:10px 10px">
+			<img src="vistas/img/plantilla/iconocydlargo.png" class="img-responsive" style="padding:10px 0px">
 
 		</span>
 
 	</a>
- 
-	<!--=====================================
-	BARRA DE NAVEGACIÓN
-	======================================-->
+
+
 	<nav class="navbar navbar-static-top" role="navigation">
 		
 		<!-- Botón de navegación -->
@@ -35,9 +33,9 @@
       	
       	</a>
 
-		<!-- perfil de usuario -->
 
-		<div class="navbar-custom-menu">
+	
+	<div class="navbar-custom-menu">
 				
 			<ul class="nav navbar-nav">
 				
