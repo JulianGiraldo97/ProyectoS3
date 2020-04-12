@@ -221,9 +221,11 @@ MODAL AGREGAR USUARIO
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
+                  <option value="Oficial">Oficial</option>
 
-                  <option value="Vendedor">Vendedor</option>
+                  <option value="Ayudante">Ayudante</option>
+
+                  <option value="Proveedor">Proveedor</option>
 
                 </select>
 
@@ -246,6 +248,20 @@ MODAL AGREGAR USUARIO
             </div>
 
           </div>
+
+          <!-- ENTRADA PARA EL SALARIO -->
+            
+          <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="nuevoSalario" placeholder="Ingresar salario" required>
+
+              </div>
+
+            </div>
 
         </div>
 

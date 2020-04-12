@@ -270,6 +270,8 @@ MODAL AGREGAR USUARIO
 
         </div>
 
+        
+
         <?php
 
           $crearUsuario = new ControladorUsuarios();
@@ -375,9 +377,13 @@ MODAL EDITAR USUARIO
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
+                  <option value="Oficial">Oficial</option>
 
-                  <option value="Vendedor">Vendedor</option>
+                  <option value="Ayudante">Ayudante</option>
+
+                  <option value="Proveedor">Proveedor</option>
+
+                  
 
                 </select>
 
