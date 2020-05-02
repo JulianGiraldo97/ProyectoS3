@@ -73,6 +73,7 @@ $(document).on("click", ".btnEditarUsuario", function(){
 			$("#editarPerfil").html(respuesta["perfil"]);
 			$("#editarPerfil").val(respuesta["perfil"]);
 			$("#fotoActual").val(respuesta["foto"]);
+			$("#editarSalario").val(respuesta["salario"]);
 
 			$("#passwordActual").val(respuesta["password"]);
 

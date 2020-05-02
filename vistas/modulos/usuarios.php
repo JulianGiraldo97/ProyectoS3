@@ -80,7 +80,7 @@
                   }
 
                   echo '<td>'.$value["perfil"].'</td>';
-
+                  
                   if($value["estado"] != 0){
 
                     echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Activado</button></td>';
@@ -89,9 +89,12 @@
 
                     echo '<td><button class="btn btn-danger btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="1">Desactivado</button></td>';
 
-                  }             
+                  }       
 
-                  echo '<td>'.$value["salario"].'</td>
+                  echo '<td>'.$value["salario"].'</td>;
+                  
+                  
+                
                   <td>
 
                     <div class="btn-group">
@@ -206,7 +209,7 @@ MODAL AGREGAR USUARIO
               
                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoSalario" placeholder="Ingresar salario" id="nuevoUsuario" required>
+                <input type="text" class="form-control input-lg" name="nuevoSalario" placeholder="Ingresar salario" id="nuevoSalario" required>
 
               </div>
 
@@ -224,15 +227,15 @@ MODAL AGREGAR USUARIO
                   
                   <option value="">Selecionar perfil</option>
 
-                  <option value="Administrador">Jefe</option>
+                  <option value="Jefe">Jefe</option>
 
-                  <option value="Especial">Oficial</option>
+                  <option value="Oficial">Oficial</option>
 
-                  <option value="Vendedor">Ayudante</option>
+                  <option value="Ayudante">Ayudante</option>
 
-                  <option value="Vendedor">Contador</option>
+                  <option value="Contador">Contador</option>
 
-                  <option value="Vendedor">Proveedor</option>
+                  <option value="Proveedor">Proveedor</option>
 
                 </select>
 
@@ -266,7 +269,7 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar usuario</button>
+          <button type="submit" class="btn btn-primary">Guardar Empleado</button>
 
         </div>
 
@@ -307,7 +310,7 @@ MODAL EDITAR USUARIO
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Editar usuario</h4>
+          <h4 class="modal-title">Editar Empleado</h4>
 
         </div>
 
@@ -347,6 +350,21 @@ MODAL EDITAR USUARIO
 
             </div>
 
+            <!-- ENTRADA PARA EL SALARIO -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+
+                <input type="text" class="form-control input-lg" id="editarSalario" name="editarSalario" value="" required>
+
+                
+              </div>
+
+            </div>
+
             <!-- ENTRADA PARA LA CONTRASEÑA -->
 
              <div class="form-group">
@@ -375,7 +393,7 @@ MODAL EDITAR USUARIO
                   
                   <option value="" id="editarPerfil"></option>
 
-                  <option value="Administrador">Administrador</option>
+                  <option value="Jefe">Jefe</option>
 
                   <option value="Oficial">Oficial</option>
 
