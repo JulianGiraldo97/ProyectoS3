@@ -95,7 +95,7 @@
 </div>
 
 <!--=====================================
-ventana agregar categoría
+MODAL AGREGAR CATEGORÍA
 ======================================-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
@@ -107,7 +107,7 @@ ventana agregar categoría
       <form role="form" method="post">
 
         <!--=====================================
-        cabeza
+        CABEZA DEL MODAL
         ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
@@ -119,14 +119,14 @@ ventana agregar categoría
         </div>
 
         <!--=====================================
-        cuerpo
+        CUERPO DEL MODAL
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- nombre -->
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               
@@ -145,7 +145,7 @@ ventana agregar categoría
         </div>
 
         <!--=====================================
-         footer
+        PIE DEL MODAL
         ======================================-->
 
         <div class="modal-footer">
@@ -172,7 +172,7 @@ ventana agregar categoría
 </div>
 
 <!--=====================================
-ventana editar categoria
+MODAL EDITAR CATEGORÍA
 ======================================-->
 
 <div id="modalEditarCategoria" class="modal fade" role="dialog">
@@ -184,7 +184,7 @@ ventana editar categoria
       <form role="form" method="post">
 
         <!--=====================================
-        head
+        CABEZA DEL MODAL
         ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
@@ -196,14 +196,14 @@ ventana editar categoria
         </div>
 
         <!--=====================================
-        body
+        CUERPO DEL MODAL
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- nombre -->
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               

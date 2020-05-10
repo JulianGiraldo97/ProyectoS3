@@ -114,7 +114,7 @@
 </div>
 
 <!--=====================================
-agregar producto
+MODAL AGREGAR PRODUCTO
 ======================================-->
 
 <div id="modalAgregarProducto" class="modal fade" role="dialog">
@@ -126,7 +126,7 @@ agregar producto
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        header
+        CABEZA DEL MODAL
         ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
@@ -138,7 +138,7 @@ agregar producto
         </div>
 
         <!--=====================================
-          body
+        CUERPO DEL MODAL
         ======================================-->
 
         <div class="modal-body">
@@ -146,7 +146,7 @@ agregar producto
           <div class="box-body">
 
 
-            <!-- entrada para categoria -->
+            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
 
             <div class="form-group">
               
@@ -178,7 +178,7 @@ agregar producto
 
             </div>
 
-            <!-- entrada para codigo -->
+            <!-- ENTRADA PARA EL CÓDIGO -->
             
             <div class="form-group">
               
@@ -192,7 +192,7 @@ agregar producto
 
             </div>
 
-            <!-- Entrada para descripcion -->
+            <!-- ENTRADA PARA LA DESCRIPCIÓN -->
 
              <div class="form-group">
               
@@ -206,7 +206,7 @@ agregar producto
 
             </div>
 
-             <!-- Entrada para stock -->
+             <!-- ENTRADA PARA STOCK -->
 
              <div class="form-group">
               
@@ -220,7 +220,7 @@ agregar producto
 
             </div>
 
-             <!-- entrada para precio compra -->
+             <!-- ENTRADA PARA PRECIO COMPRA -->
 
              <div class="form-group row">
 
@@ -236,7 +236,7 @@ agregar producto
 
                 </div>
 
-                <!-- entrada para precio venta -->
+                <!-- ENTRADA PARA PRECIO VENTA -->
 
                 <div class="col-xs-12 col-sm-6">
                 
@@ -250,7 +250,7 @@ agregar producto
                 
                   <br>
 
-                  <!-- checkbox porcentaje -->
+                  <!-- CHECKBOX PARA PORCENTAJE -->
 
                   <div class="col-xs-6">
                     
@@ -266,7 +266,7 @@ agregar producto
 
                   </div>
 
-                  <!-- entrada para porcentaje -->
+                  <!-- ENTRADA PARA PORCENTAJE -->
 
                   <div class="col-xs-6" style="padding:0">
                     
@@ -284,7 +284,7 @@ agregar producto
 
             </div>
 
-            <!-- entrada para foto del producto -->
+            <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">
               
@@ -303,7 +303,7 @@ agregar producto
         </div>
 
         <!--=====================================
-        footer
+        PIE DEL MODAL
         ======================================-->
 
         <div class="modal-footer">
@@ -330,7 +330,7 @@ agregar producto
 </div>
 
 <!--=====================================
-editar producto
+MODAL EDITAR PRODUCTO
 ======================================-->
 
 <div id="modalEditarProducto" class="modal fade" role="dialog">
@@ -342,7 +342,7 @@ editar producto
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        head editar producto
+        CABEZA DEL MODAL
         ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
@@ -354,7 +354,7 @@ editar producto
         </div>
 
         <!--=====================================
-        body editar producto
+        CUERPO DEL MODAL
         ======================================-->
 
         <div class="modal-body">
@@ -362,7 +362,7 @@ editar producto
           <div class="box-body">
 
 
-            <!-- seleccionar categoria -->
+            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
 
             <div class="form-group">
               
@@ -380,7 +380,7 @@ editar producto
 
             </div>
 
-            <!-- entrada para codigo -->
+            <!-- ENTRADA PARA EL CÓDIGO -->
             
             <div class="form-group">
               
@@ -394,7 +394,7 @@ editar producto
 
             </div>
 
-            <!-- entrada para descripcion -->
+            <!-- ENTRADA PARA LA DESCRIPCIÓN -->
 
              <div class="form-group">
               
@@ -408,7 +408,7 @@ editar producto
 
             </div>
 
-             <!-- entrada para stock -->
+             <!-- ENTRADA PARA STOCK -->
 
              <div class="form-group">
               
@@ -422,7 +422,7 @@ editar producto
 
             </div>
 
-             <!-- entrada para precio compra -->
+             <!-- ENTRADA PARA PRECIO COMPRA -->
 
              <div class="form-group row">
 
@@ -438,7 +438,7 @@ editar producto
 
                 </div>
 
-                <!-- entrada para precio venta -->
+                <!-- ENTRADA PARA PRECIO VENTA -->
 
                 <div class="col-xs-6">
                 
@@ -452,7 +452,7 @@ editar producto
                 
                   <br>
 
-                  <!-- entrada para porcentaje -->
+                  <!-- CHECKBOX PARA PORCENTAJE -->
 
                   <div class="col-xs-6">
                     
@@ -468,7 +468,7 @@ editar producto
 
                   </div>
 
-                  <!-- entrada porcentaje -->
+                  <!-- ENTRADA PARA PORCENTAJE -->
 
                   <div class="col-xs-6" style="padding:0">
                     
@@ -486,7 +486,7 @@ editar producto
 
             </div>
 
-            <!-- entrada foto producto -->
+            <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">
               
@@ -507,7 +507,7 @@ editar producto
         </div>
 
         <!--=====================================
-        footer
+        PIE DEL MODAL
         ======================================-->
 
         <div class="modal-footer">

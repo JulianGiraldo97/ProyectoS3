@@ -3,7 +3,7 @@
 class ControladorCategorias{
 
 	/*=============================================
-	metodo para crear categorias
+	CREAR CATEGORIAS
 	=============================================*/
 
 	static public function ctrCrearCategoria(){
@@ -66,7 +66,7 @@ class ControladorCategorias{
 	}
 
 	/*=============================================
-	metodo para mostrar categoria
+	MOSTRAR CATEGORIAS
 	=============================================*/
 
 	static public function ctrMostrarCategorias($item, $valor){
@@ -80,7 +80,7 @@ class ControladorCategorias{
 	}
 
 	/*=============================================
-	metodo para editar las categorias
+	EDITAR CATEGORIA
 	=============================================*/
 
 	static public function ctrEditarCategoria(){
@@ -144,7 +144,7 @@ class ControladorCategorias{
 	}
 
 	/*=============================================
-	metodo para borrar categoria
+	BORRAR CATEGORIA
 	=============================================*/
 
 	static public function ctrBorrarCategoria(){

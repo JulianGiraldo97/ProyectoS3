@@ -50,7 +50,7 @@ $(".nuevaFoto").change(function(){
 /*=============================================
 EDITAR USUARIO
 =============================================*/
-$(document).on("click", ".btnEditarUsuario", function(){
+$(".tablas").on("click", ".btnEditarUsuario", function(){
 
 	var idUsuario = $(this).attr("idUsuario");
 	
@@ -73,7 +73,6 @@ $(document).on("click", ".btnEditarUsuario", function(){
 			$("#editarPerfil").html(respuesta["perfil"]);
 			$("#editarPerfil").val(respuesta["perfil"]);
 			$("#fotoActual").val(respuesta["foto"]);
-			$("#editarSalario").val(respuesta["salario"]);
 
 			$("#passwordActual").val(respuesta["password"]);
 
@@ -92,7 +91,7 @@ $(document).on("click", ".btnEditarUsuario", function(){
 /*=============================================
 ACTIVAR USUARIO
 =============================================*/
-$(document).on("click", ".btnActivar", function(){
+$(".tablas").on("click", ".btnActivar", function(){
 
 	var idUsuario = $(this).attr("idUsuario");
 	var estadoUsuario = $(this).attr("estadoUsuario");
@@ -111,27 +110,27 @@ $(document).on("click", ".btnActivar", function(){
       processData: false,
       success: function(respuesta){
 
-      	if(window.matchMedia("(max-width:767px)").matches){
-		
-      		 swal({
-		      	title: "El usuario ha sido actualizado",
-		      	type: "success",
-		      	confirmButtonText: "¡Cerrar!"
-		    	}).then(function(result) {
-		        
-		        	if (result.value) {
+	      	if(window.matchMedia("(max-width:767px)").matches){
 
-		        	window.location = "usuarios";
+	      		 swal({
+			      title: "El usuario ha sido actualizado",
+			      type: "success",
+			      confirmButtonText: "¡Cerrar!"
+			    }).then(function(result) {
+			        if (result.value) {
 
-		        }
+			        	window.location = "usuarios";
 
-		      });
+			        }
 
 
+				});
+
+	      	}
+      
 		}
-      }
 
-  	})
+	})
 
   	if(estadoUsuario == 0){
 
@@ -190,7 +189,7 @@ $("#nuevoUsuario").change(function(){
 /*=============================================
 ELIMINAR USUARIO
 =============================================*/
-$(document).on("click", ".btnEliminarUsuario", function(){
+$(".tablas").on("click", ".btnEliminarUsuario", function(){
 
   var idUsuario = $(this).attr("idUsuario");
   var fotoUsuario = $(this).attr("fotoUsuario");

@@ -145,7 +145,7 @@
 </div>
 
 <!--=====================================
-agregar producto ventana
+MODAL AGREGAR PRODUCTO
 ======================================-->
 
 <div id="modalAgregarProducto" class="modal fade" role="dialog">
@@ -157,7 +157,7 @@ agregar producto ventana
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        header
+        CABEZA DEL MODAL
         ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
@@ -169,14 +169,14 @@ agregar producto ventana
         </div>
 
         <!--=====================================
-        body
+        CUERPO DEL MODAL
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- entrada para codigo -->
+            <!-- ENTRADA PARA EL CÓDIGO -->
             
             <div class="form-group">
               
@@ -190,7 +190,7 @@ agregar producto ventana
 
             </div>
 
-            <!-- entrada para descripcion -->
+            <!-- ENTRADA PARA LA DESCRIPCIÓN -->
 
              <div class="form-group">
               
@@ -204,7 +204,7 @@ agregar producto ventana
 
             </div>
 
-            <!-- seleccionar categoria -->
+            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
 
             <div class="form-group">
               
@@ -228,7 +228,7 @@ agregar producto ventana
 
             </div>
 
-             <!-- entrada stock -->
+             <!-- ENTRADA PARA STOCK -->
 
              <div class="form-group">
               
@@ -242,7 +242,7 @@ agregar producto ventana
 
             </div>
 
-             <!-- entrada precio de compra -->
+             <!-- ENTRADA PARA PRECIO COMPRA -->
 
              <div class="form-group row">
 
@@ -258,7 +258,7 @@ agregar producto ventana
 
                 </div>
 
-                <!-- entrada precio de venta -->
+                <!-- ENTRADA PARA PRECIO VENTA -->
 
                 <div class="col-xs-6">
                 
@@ -272,7 +272,7 @@ agregar producto ventana
                 
                   <br>
 
-                  <!-- checkboc porcentaje -->
+                  <!-- CHECKBOX PARA PORCENTAJE -->
 
                   <div class="col-xs-6">
                     
@@ -288,7 +288,7 @@ agregar producto ventana
 
                   </div>
 
-                  <!-- entrada porcentaje -->
+                  <!-- ENTRADA PARA PORCENTAJE -->
 
                   <div class="col-xs-6" style="padding:0">
                     
@@ -306,7 +306,7 @@ agregar producto ventana
 
             </div>
 
-            <!-- entrada para foto -->
+            <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">
               
@@ -325,7 +325,7 @@ agregar producto ventana
         </div>
 
         <!--=====================================
-         footer
+        PIE DEL MODAL
         ======================================-->
 
         <div class="modal-footer">

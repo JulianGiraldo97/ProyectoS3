@@ -1,5 +1,5 @@
 /*=============================================
-editar categoria
+EDITAR CATEGORIA
 =============================================*/
 $(".tablas").on("click", ".btnEditarCategoria", function(){
 
@@ -29,7 +29,7 @@ $(".tablas").on("click", ".btnEditarCategoria", function(){
 })
 
 /*=============================================
-eliminar categoria
+ELIMINAR CATEGORIA
 =============================================*/
 $(".tablas").on("click", ".btnEliminarCategoria", function(){
 

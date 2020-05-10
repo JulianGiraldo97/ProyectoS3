@@ -5,7 +5,7 @@ require_once "conexion.php";
 class ModeloCategorias{
 
 	/*=============================================
-	metodo para crear una categoria
+	CREAR CATEGORIA
 	=============================================*/
 
 	static public function mdlIngresarCategoria($tabla, $datos){
@@ -30,7 +30,7 @@ class ModeloCategorias{
 	}
 
 	/*=============================================
-	metodo para mostrar las categorías
+	MOSTRAR CATEGORIAS
 	=============================================*/
 
 	static public function mdlMostrarCategorias($tabla, $item, $valor){
@@ -62,10 +62,10 @@ class ModeloCategorias{
 	}
 
 	/*=============================================
-	metodo para editar las categorías
+	EDITAR CATEGORIA
 	=============================================*/
 
-	static public function mdlEditarCategoria($tabla, $datos){ 
+	static public function mdlEditarCategoria($tabla, $datos){
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET categoria = :categoria WHERE id = :id");
 
@@ -88,7 +88,7 @@ class ModeloCategorias{
 	}
 
 	/*=============================================
-	metodo para borrar categoria
+	BORRAR CATEGORIA
 	=============================================*/
 
 	static public function mdlBorrarCategoria($tabla, $datos){

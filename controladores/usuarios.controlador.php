@@ -32,7 +32,6 @@ class ControladorUsuarios{
 						$_SESSION["usuario"] = $respuesta["usuario"];
 						$_SESSION["foto"] = $respuesta["foto"];
 						$_SESSION["perfil"] = $respuesta["perfil"];
-						$_SESSION["salario"] = $respuesta["salario"];
 
 						/*=============================================
 						REGISTRAR FECHA PARA SABER EL ÚLTIMO LOGIN
@@ -168,8 +167,7 @@ class ControladorUsuarios{
 				$datos = array("nombre" => $_POST["nuevoNombre"],
 					           "usuario" => $_POST["nuevoUsuario"],
 					           "password" => $encriptar,
-							   "perfil" => $_POST["nuevoPerfil"],
-							   "salario" => $_POST["nuevoSalario"],
+					           "perfil" => $_POST["nuevoPerfil"],
 					           "foto"=>$ruta);
 
 				$respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla, $datos);
@@ -181,7 +179,7 @@ class ControladorUsuarios{
 					swal({
 
 						type: "success",
-						title: "¡El empleado ha sido guardado correctamente!",
+						title: "¡El usuario ha sido guardado correctamente!",
 						showConfirmButton: true,
 						confirmButtonText: "Cerrar"
 
@@ -209,7 +207,7 @@ class ControladorUsuarios{
 					swal({
 
 						type: "error",
-						title: "¡El empleado no puede ir vacío o llevar caracteres especiales!",
+						title: "¡El usuario no puede ir vacío o llevar caracteres especiales!",
 						showConfirmButton: true,
 						confirmButtonText: "Cerrar"
 
@@ -375,7 +373,6 @@ class ControladorUsuarios{
 							   "usuario" => $_POST["editarUsuario"],
 							   "password" => $encriptar,
 							   "perfil" => $_POST["editarPerfil"],
-							   "salario" => $_POST["editarSalario"],
 							   "foto" => $ruta);
 
 				$respuesta = ModeloUsuarios::mdlEditarUsuario($tabla, $datos);
@@ -386,7 +383,7 @@ class ControladorUsuarios{
 
 					swal({
 						  type: "success",
-						  title: "El empleado ha sido editado correctamente",
+						  title: "El usuario ha sido editado correctamente",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
 						  }).then(function(result){
