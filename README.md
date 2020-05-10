@@ -6,5 +6,8 @@ Universidad del Quindío
 para correr el proyecto, usar Xampp, correr apache y MySQL y abrir localhost/Proyecto POS
 
 Versión del proyecto:
-v1.0.3
+v1.0.4
+
+version notes 1.0.4:
+Se agrega modulo de gestión de productos
 
