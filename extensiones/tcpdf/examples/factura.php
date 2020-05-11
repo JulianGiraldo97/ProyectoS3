@@ -12,6 +12,8 @@ require_once "../../../modelos/usuarios.modelo.php";
 require_once "../../../controladores/productos.controlador.php";
 require_once "../../../modelos/productos.modelo.php";
 
+
+
 class imprimirFactura{
 
 public $codigo;
@@ -63,17 +65,17 @@ $bloque1 = <<<EOF
 		
 		<tr>
 			
-			<td style="width:150px"><img src="images/logo-negro-bloque.png"></td>
+			<td style="width:150px"><img src="images/iconofactura.png"></td>
 
 			<td style="background-color:white; width:140px">
 				
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					NIT: 71.759.963-9
+					NIT: 901290432-1
 
 					<br>
-					Dirección: Calle 44B 92-11
+					Dirección: Carrera 18 #30 - 18 Armenia
 
 				</div>
 
@@ -84,10 +86,13 @@ $bloque1 = <<<EOF
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					Teléfono: 300 786 52 49
+					Teléfono: 318 6997492
+
+					<br>
+					Alejandro Martinez Puerta
 					
 					<br>
-					ventas@inventorysystem.com
+					cydmodulares@gmail.com
 
 				</div>
 				
