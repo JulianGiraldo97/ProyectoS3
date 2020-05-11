@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar Empleados
+      Administrar usuarios
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar Empleados</li>
+      <li class="active">Administrar usuarios</li>
     
     </ol>
 
@@ -26,7 +26,7 @@
   
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
           
-          Agregar Empleado
+          Agregar usuario
 
         </button>
 
@@ -46,7 +46,7 @@
            <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
-           <th>Salario</th>
+           <th>Último login</th>
            <th>Acciones</th>
 
          </tr> 
@@ -153,7 +153,7 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar Empleado</h4>
+          <h4 class="modal-title">Agregar usuario</h4>
 
         </div>
 
@@ -221,11 +221,9 @@ MODAL AGREGAR USUARIO
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Oficial">Oficial</option>
+                  <option value="Especial">Especial</option>
 
-                  <option value="Ayudante">Ayudante</option>
-
-                  <option value="Proveedor">Proveedor</option>
+                  <option value="Vendedor">Vendedor</option>
 
                 </select>
 
@@ -248,20 +246,6 @@ MODAL AGREGAR USUARIO
             </div>
 
           </div>
-
-          <!-- ENTRADA PARA EL SALARIO -->
-            
-          <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="nuevoSalario" placeholder="Ingresar salario" required>
-
-              </div>
-
-            </div>
 
         </div>
 

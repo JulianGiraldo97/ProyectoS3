@@ -22,7 +22,9 @@
 
 	</a>
 
-
+	<!--=====================================
+	BARRA DE NAVEGACIÓN
+	======================================-->
 	<nav class="navbar navbar-static-top" role="navigation">
 		
 		<!-- Botón de navegación -->
@@ -33,29 +35,33 @@
       	
       	</a>
 
+		<!-- perfil de usuario -->
 
-	
-	<div class="navbar-custom-menu">
+		<div class="navbar-custom-menu">
 				
 			<ul class="nav navbar-nav">
 				
 				<li class="dropdown user user-menu">
 					
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						
 
-						<?php 
-						
-						if ($_SESSION["foto"] != "") {
-							echo '<img src="'.$_SESSION["foto"].'"class="user-image">';
-						}else{
-							echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image">';
-						}
-						
-						?>
+					<?php
+
+					if($_SESSION["foto"] != ""){
+
+						echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
+
+					}else{
 
 
-						<span class="hidden-xs"><?php echo $_SESSION["nombre"];?> </span>
+						echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image">';
+
+					}
+
+
+					?>
+						
+						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span>
 
 					</a>
 

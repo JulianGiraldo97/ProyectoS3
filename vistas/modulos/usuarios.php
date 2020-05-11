@@ -237,6 +237,8 @@ MODAL AGREGAR USUARIO
 
                   <option value="Proveedor">Proveedor</option>
 
+                  <option value="Proveedor">Vendedor</option>
+
                 </select>
 
               </div>
@@ -356,9 +358,9 @@ MODAL EDITAR USUARIO
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-money"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarSalario" name="editarSalario" value="" required>
+                <input type="text" class="form-control input-lg" id="editarSalario" name="editarSalario" placeholder="Escriba el nuevo salario" value="" required>
 
                 
               </div>
