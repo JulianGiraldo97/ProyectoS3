@@ -1,10 +1,25 @@
+<?php
+
+if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
+
+  echo '<script>
+
+    window.location = "inicio";
+
+  </script>';
+
+  return;
+
+}
+
+?>
 <div class="content-wrapper">
 
   <section class="content-header">
     
     <h1>
       
-      Administrar Empleados
+      Administrar usuarios
     
     </h1>
 
@@ -12,7 +27,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar Empleados</li>
+      <li class="active">Administrar usuarios</li>
     
     </ol>
 
@@ -26,7 +41,7 @@
   
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
           
-          Agregar Empleado
+          Agregar usuario
 
         </button>
 
@@ -46,7 +61,7 @@
            <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
-           <th>Salario</th>
+           <th>Último login</th>
            <th>Acciones</th>
 
          </tr> 
@@ -80,7 +95,7 @@
                   }
 
                   echo '<td>'.$value["perfil"].'</td>';
-                  
+
                   if($value["estado"] != 0){
 
                     echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Activado</button></td>';
@@ -89,12 +104,9 @@
 
                     echo '<td><button class="btn btn-danger btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="1">Desactivado</button></td>';
 
-                  }       
+                  }             
 
-                  echo '<td>'.$value["salario"].'</td>;
-                  
-                  
-                
+                  echo '<td>'.$value["ultimo_login"].'</td>
                   <td>
 
                     <div class="btn-group">
@@ -145,7 +157,7 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar Empleado</h4>
+          <h4 class="modal-title">Agregar usuario</h4>
 
         </div>
 
@@ -185,8 +197,6 @@ MODAL AGREGAR USUARIO
 
             </div>
 
-            
-
             <!-- ENTRADA PARA LA CONTRASEÑA -->
 
              <div class="form-group">
@@ -196,20 +206,6 @@ MODAL AGREGAR USUARIO
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
                 <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL SALARIO -->
-
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="nuevoSalario" placeholder="Ingresar salario" id="nuevoSalario" required>
 
               </div>
 
@@ -227,17 +223,11 @@ MODAL AGREGAR USUARIO
                   
                   <option value="">Selecionar perfil</option>
 
-                  <option value="Jefe">Jefe</option>
+                  <option value="Administrador">Administrador</option>
 
-                  <option value="Oficial">Oficial</option>
+                  <option value="Especial">Especial</option>
 
-                  <option value="Ayudante">Ayudante</option>
-
-                  <option value="Contador">Contador</option>
-
-                  <option value="Proveedor">Proveedor</option>
-
-                  <option value="Proveedor">Vendedor</option>
+                  <option value="Vendedor">Vendedor</option>
 
                 </select>
 
@@ -271,11 +261,9 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar Empleado</button>
+          <button type="submit" class="btn btn-primary">Guardar usuario</button>
 
         </div>
-
-        
 
         <?php
 
@@ -312,7 +300,7 @@ MODAL EDITAR USUARIO
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Editar Empleado</h4>
+          <h4 class="modal-title">Editar usuario</h4>
 
         </div>
 
@@ -352,21 +340,6 @@ MODAL EDITAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA EL SALARIO -->
-
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-money"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="editarSalario" name="editarSalario" placeholder="Escriba el nuevo salario" value="" required>
-
-                
-              </div>
-
-            </div>
-
             <!-- ENTRADA PARA LA CONTRASEÑA -->
 
              <div class="form-group">
@@ -395,15 +368,11 @@ MODAL EDITAR USUARIO
                   
                   <option value="" id="editarPerfil"></option>
 
-                  <option value="Jefe">Jefe</option>
+                  <option value="Administrador">Administrador</option>
 
-                  <option value="Oficial">Oficial</option>
+                  <option value="Especial">Especial</option>
 
-                  <option value="Ayudante">Ayudante</option>
-
-                  <option value="Proveedor">Proveedor</option>
-
-                  
+                  <option value="Vendedor">Vendedor</option>
 
                 </select>
 
@@ -421,7 +390,7 @@ MODAL EDITAR USUARIO
 
               <p class="help-block">Peso máximo de la foto 2MB</p>
 
-              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizarEditar" width="100px">
 
               <input type="hidden" name="fotoActual" id="fotoActual">
 

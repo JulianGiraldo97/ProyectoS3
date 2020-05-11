@@ -32,7 +32,6 @@ class ControladorUsuarios{
 						$_SESSION["usuario"] = $respuesta["usuario"];
 						$_SESSION["foto"] = $respuesta["foto"];
 						$_SESSION["perfil"] = $respuesta["perfil"];
-						$_SESSION["salario"] = $respuesta["salario"];
 
 						/*=============================================
 						REGISTRAR FECHA PARA SABER EL ÚLTIMO LOGIN
@@ -168,8 +167,7 @@ class ControladorUsuarios{
 				$datos = array("nombre" => $_POST["nuevoNombre"],
 					           "usuario" => $_POST["nuevoUsuario"],
 					           "password" => $encriptar,
-							   "perfil" => $_POST["nuevoPerfil"],
-							   "salario" => $_POST["nuevoSalaio"],
+					           "perfil" => $_POST["nuevoPerfil"],
 					           "foto"=>$ruta);
 
 				$respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla, $datos);
@@ -353,7 +351,7 @@ class ControladorUsuarios{
 									  title: "¡La contraseña no puede ir vacía o llevar caracteres especiales!",
 									  showConfirmButton: true,
 									  confirmButtonText: "Cerrar"
-									  }).then(function(result){
+									  }).then(function(result) {
 										if (result.value) {
 
 										window.location = "usuarios";
@@ -362,6 +360,8 @@ class ControladorUsuarios{
 									})
 
 						  	</script>';
+
+						  	return;
 
 					}
 
@@ -375,7 +375,6 @@ class ControladorUsuarios{
 							   "usuario" => $_POST["editarUsuario"],
 							   "password" => $encriptar,
 							   "perfil" => $_POST["editarPerfil"],
-							   "salario" => $_POST["editarSalario"],
 							   "foto" => $ruta);
 
 				$respuesta = ModeloUsuarios::mdlEditarUsuario($tabla, $datos);
@@ -389,7 +388,7 @@ class ControladorUsuarios{
 						  title: "El usuario ha sido editado correctamente",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 									if (result.value) {
 
 									window.location = "usuarios";
@@ -411,7 +410,7 @@ class ControladorUsuarios{
 						  title: "¡El nombre no puede ir vacío o llevar caracteres especiales!",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 							if (result.value) {
 
 							window.location = "usuarios";
@@ -455,8 +454,9 @@ class ControladorUsuarios{
 					  type: "success",
 					  title: "El usuario ha sido borrado correctamente",
 					  showConfirmButton: true,
-					  confirmButtonText: "Cerrar"
-					  }).then(function(result){
+					  confirmButtonText: "Cerrar",
+					  closeOnConfirm: false
+					  }).then(function(result) {
 								if (result.value) {
 
 								window.location = "usuarios";
