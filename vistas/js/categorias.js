@@ -1,6 +1,7 @@
 /*=============================================
 EDITAR CATEGORIA
 =============================================*/
+//hola prueba
 $(".tablas").on("click", ".btnEditarCategoria", function(){
 
 	var idCategoria = $(this).attr("idCategoria");
